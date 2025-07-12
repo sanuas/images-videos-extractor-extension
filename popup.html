@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Image Extractor</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 10px;
+      width: 320px;
+    }
+
+    h4 {
+      margin: 10px 0 5px;
+      font-size: 14px;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 3px;
+    }
+
+    .images-group,
+    .videos-group {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      margin-bottom: 15px;
+    }
+
+    .img-item,
+    .video-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border: 1px solid #ddd;
+      padding: 5px;
+      border-radius: 5px;
+      background: #f9f9f9;
+    }
+
+    .img-item img,
+    .video-item video {
+      width: 100%;
+      height: 100px;
+      object-fit: contain;
+      border-radius: 4px;
+      background: #fff;
+    }
+
+    .dimension {
+      font-size: 11px;
+      color: #666;
+      margin: 5px 0 2px 0;
+      text-align: center;
+    }
+
+    .download-btn {
+      font-size: 12px;
+      color: #007BFF;
+      text-decoration: none;
+      margin-top: 2px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- image tab start -->
+  <h4>Large Images (Above 500px)</h4>
+  <div id="large-images" class="images-group"></div>
+
+  <h4>Medium Images (Between 300px and 500px)</h4>
+  <div id="medium-images" class="images-group"></div>
+
+  <h4>Small Images (Below 300px)</h4>
+  <div id="small-images" class="images-group"></div>
+  <!-- image tab end -->
+
+  <!-- video tab start -->
+  <h4>Page Videos</h4>
+  <div id="video-list" class="videos-group"></div>
+  <!-- video tab end -->
+
+  <div class="copyright">
+    <p style="font-size: 10px; color: #999; text-align: center;">
+      &copy; 2025 Image Extractor. Developed by <a href="https://its.net.in/" target="_blank" title="ITS - Info Twist Solutions">ITS</a>
+    </p>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
