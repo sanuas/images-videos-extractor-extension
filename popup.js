@@ -1,3 +1,16 @@
+/*
+ * Image & Video Extractor Chrome Extension
+ * ----------------------------------------
+ * Version        : 1.0.0
+ * Description    : Extracts and categorizes all images and videos from the current webpage.
+ * Author         : ITS - Info Twist Solutions
+ * Website        : https://its.net.in
+ * Developer      : Sanu A S
+ * Contact        : info@infotwistsolutions.com | +91-906-11-888-22
+ * License        : MIT License
+ * Last Updated   : July 2025
+ */
+
 function getImagesFromPage() {
   return Array.from(document.images)
     .map(img => img.src)
