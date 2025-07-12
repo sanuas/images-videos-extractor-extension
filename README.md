@@ -28,3 +28,9 @@ Developed by **ITS - Info Twist Solutions**
 1. Clone or download this repository:
    ```bash
    git clone https://github.com/sanuas/images-videos-extractor-extension.git
+
+## 🧷 How to Pack It:
+
+1. Place all files in one folder.
+2. Right-click → "Compress"/"Send to ZIP" → Name it `images_videos_extractor.zip`.
+3. Go to `chrome://extensions/` → Enable **Developer mode** → Click **Load unpacked** → Select the folder.
